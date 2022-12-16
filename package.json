@@ -1,6 +1,6 @@
 {
   "name": "mytest-githubactions2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "测试github actions自动化发布",
   "main": "src/index.js",
   "scripts": {
