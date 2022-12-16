@@ -1,0 +1,19 @@
+{
+  "name": "mytest-githubactions",
+  "version": "1.0.0",
+  "description": "测试github actions自动化发布",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soeasyjx/mytest-githubactions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soeasyjx/mytest-githubactions/issues"
+  },
+  "homepage": "https://github.com/soeasyjx/mytest-githubactions#readme"
+}
