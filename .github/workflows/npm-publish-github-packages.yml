@@ -3,9 +3,8 @@
 
 name: 我的工作流程
 on:
-  push:
-    branches:
-      - 'main'
+  release:
+    types: [created]
 
 jobs:
   publish-gpr:
