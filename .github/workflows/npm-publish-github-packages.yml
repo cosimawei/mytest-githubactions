@@ -19,7 +19,7 @@ jobs:
       #     node-version: 16
       #     registry-url: https://registry.npmjs.org
       - run: 
-          echo "${{github.workspace}}"
+          echo "工作目录是：${{github.workspace}}"
       # - run: npm publish
       #   env:
       #     NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
