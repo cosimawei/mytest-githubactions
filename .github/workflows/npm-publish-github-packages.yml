@@ -2,7 +2,11 @@
 # For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
 
 name: 我的工作流程
-on: push
+on:
+  push:
+    paths:
+      - ".github/workflows/*.yml"
+      - "src/**/*.*"
 
 jobs:
   publish-gpr:
