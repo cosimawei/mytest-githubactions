@@ -3,8 +3,7 @@
 
 name: 我的工作流程
 on:
-  release:
-    types: [created]
+  push
 
 jobs:
   publish-gpr:
