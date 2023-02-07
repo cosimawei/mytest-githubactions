@@ -2,10 +2,14 @@
   "name": "mytest-githubactions2",
   "version": "1.0.3",
   "description": "测试github actions自动化发布",
-  "main": "src/index.js",
+  "main": "dist/bundle.js",
   "scripts": {
-    "test": "echo \"Error: no111 test specified\" && exit 1"
+    "test": "echo \"Error: no111 test specified\" && exit 1",
+    "build": "rollup --config rollup.config.js"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/soeasyjx/mytest-githubactions.git"
@@ -15,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/soeasyjx/mytest-githubactions/issues"
   },
-  "homepage": "https://github.com/soeasyjx/mytest-githubactions#readme"
+  "homepage": "https://github.com/soeasyjx/mytest-githubactions#readme",
+  "devDependencies": {
+    "rollup": "^3.14.0"
+  }
 }
