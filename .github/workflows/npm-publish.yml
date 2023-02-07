@@ -42,7 +42,7 @@ jobs:
           pnpm install
           pnpm build
       - name: 发布到npm   
-        run: npm publish
+        run: pnpm publish
       - run: echo npm view pnpm version  
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
