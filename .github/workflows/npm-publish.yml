@@ -41,10 +41,8 @@ jobs:
         run: |
           pnpm install
           pnpm build
-      - name: 更新版本号
-        run: npm version patch
-      - run: echo npm view pnpm version
       - name: 发布到npm   
         run: npm publish
+      - run: echo npm view pnpm version  
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
