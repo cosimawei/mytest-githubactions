@@ -44,9 +44,7 @@ jobs:
           pnpm install
           pnpm build
       - name: 发布到npm   
-        run: |
-          npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
-          npm publish
+        run: npm publish
       - run: echo npm view pnpm version  
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
