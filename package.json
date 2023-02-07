@@ -4,15 +4,12 @@
   "description": "测试github actions自动化发布",
   "main": "dist/bundle.js",
   "scripts": {
-    "test": "echo \"Error: no111 test specified\" && exit 1",
+    "test": "echo \"Error: no111 test specified1\" && exit 1",
     "build": "rollup --config rollup.config.js"
   },
   "files": [
     "dist"
   ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/soeasyjx/mytest-githubactions.git"
