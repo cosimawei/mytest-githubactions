@@ -44,9 +44,10 @@ jobs:
           pnpm install
           pnpm build
       - name: 查看权限
-        run:  npm whoami   
+        run:  npm whoami
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}} 
       - name: 发布到npm   
         run: npm publish
-      - run: echo npm view pnpm version  
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
