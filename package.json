@@ -1,6 +1,6 @@
 {
-  "name": "mytest-githubactions2",
-  "version": "1.0.5",
+  "name": "githubactions_npmpublish",
+  "version": "1.0.0",
   "description": "测试github actions自动化发布",
   "main": "dist/bundle.js",
   "scripts": {
