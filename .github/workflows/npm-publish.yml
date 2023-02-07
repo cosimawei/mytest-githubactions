@@ -45,7 +45,7 @@ jobs:
           pnpm build
       - name: 发布到npm   
         run: |
-          npm config set registry https://registry.npmjs.org
+          npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
           npm publish
       - run: echo npm view pnpm version  
         env:
